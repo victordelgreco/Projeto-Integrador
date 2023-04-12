@@ -1,0 +1,702 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: auto;
+    font-family: cursive;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: auto;
+    background-color: #fff;
+
+}
+
+
+
+.desconto-promocional {
+
+    height: auto;
+    background-color: #526A52;
+}
+
+.txt-desconto {
+    color: #ffffff;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+
+.menu {
+
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.menu li {
+    list-style-type: none;
+
+}
+
+/*ajustar*/
+section.banner {
+    height: auto;
+    margin-top: 5px;
+}
+
+.numbertext img {
+    height: auto;
+    width: 100%;
+}
+
+
+.numbertext {
+    height: auto;
+}
+
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 15px;
+    color: #526A52;
+    width: auto;
+    height: 10vh;
+    padding: 0px 30px 0px 30px;
+    text-decoration: none;
+
+}
+
+.menu li a {
+    display: flex;
+    font-size: 15px;
+    color: #526A52;
+    text-decoration: none;
+    text-align: center;
+    justify-content: left;
+
+}
+
+.menu li {
+    text-align: center;
+}
+
+.menu-item:hover,
+.menu li ul li a:hover {
+    background: #526A52;
+    color: #ffffff;
+    transition: 500ms;
+}
+
+
+
+
+
+.menu li ul {
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    height: auto;
+    z-index: 99;
+
+}
+
+
+.menu li:hover ul,
+.menu li.over ul {
+    display: block;
+
+}
+
+.sub-menu a {
+    padding: 10px;
+}
+
+
+
+.section-categoria {
+    background-color: #526A52;
+}
+
+
+
+.divCategoria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.divCategoria div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50px;
+}
+
+.divCategoria div h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 12px;
+
+}
+
+.type-cactus-icon {
+    padding: 5px;
+    width: 5vw;
+    height: auto;
+    cursor: pointer;
+
+}
+
+.type-cactus-icon:hover {
+    width: 6vw;
+    transition: 200ms;
+}
+
+.type-cactus-icon {
+    transition: 200ms;
+}
+
+
+.logotype {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+
+.slideshow-container {
+    max-width: 1400px;
+    position: relative;
+    margin: auto;
+}
+
+/* .mySlides {
+    display: none;
+  } */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+
+.prev:hover,
+.next:hover {
+
+    color: #ffffff;
+
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    height: auto;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #526A52;
+    height: auto;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+    height: auto;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #526A52;
+    height: auto;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    position: absolute;
+    top: 140px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.section-beneficios-da-loja {
+    height: auto;
+}
+
+.div-beneficios-da-loja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    margin-top: 10px;
+    background-color: #f6f6f6;
+}
+
+
+
+.div-info-beneficios-loja {
+    display: block;
+    margin-left: 15px;
+
+}
+
+.frete-gratis,
+.div-pague-seguro,
+.div-devolucoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+.img-frete-gratis,
+.img-pague-seguro,
+.img-devolucoes {
+    width: 13%;
+}
+
+.titulo-beneficios-loja {
+    display: inline-block;
+    color: #526A52;
+    font-family: Arial, Helvetica, sans-serif !important;
+
+}
+
+.txt-info-beneficios-loja {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.carrosel-produtos,
+.carrosel-produtos-dois {
+    background: #e2e2ba;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    height: 300px;
+}
+
+
+.title-logo {
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    color: #526A52;
+    width: auto;
+    height: auto;
+    margin: 0px 45px 0px 5px;
+}
+
+
+
+.contato-whatsap-logo {
+    cursor: pointer;
+    position: fixed;
+    right: 45px;
+    bottom: 30px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 58px;
+    color: #ffffff;
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    height: auto;
+    color: #526A52;
+}
+
+.div-menu-footer h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    height: auto;
+
+}
+
+.lista-redes-sociais {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.title-siga-nos {
+    align-items: center;
+}
+
+.lista-menu-footer,
+.lista-redes-sociais {
+    list-style: none;
+    cursor: pointer;
+    height: auto;
+}
+
+.lista-menu-footer li {
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    margin: 10px 0px 0px 10px;
+}
+
+li img {
+    width: 40px;
+
+}
+
+.aprenda-mais {
+    background-image: url(/src/public/img/banner-area\ cactus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    margin-bottom: 1px;
+    position: relative;
+
+}
+
+
+.aprenda-mais-box-center {
+    position: absolute;
+    top: 25%;
+    margin: 0px 77px 0px 700px;
+    height: auto;
+    width: auto;
+    height: 55%;
+
+}
+
+.aprenda-mais h2 {
+    height: auto;
+    z-index: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 49px;
+    font-weight: 200;
+    text-align: left;
+    color: white;
+    width: auto;
+    text-shadow: 2px 2px 2 #121e129c;
+
+}
+
+.aprenda-mais p {
+    height: auto;
+    z-index: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+    text-shadow: 2px 2px 2px #121e129c;
+
+}
+
+.aprenda-mais a {
+    text-decoration: none;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: #fff 2px solid;
+    color: #fff;
+    margin-left: 480px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+}
+
+.aprenda-mais a:hover {
+    background-color: #fff;
+    color: #526A52;
+    transition: 200ms;
+}
+
+/* NEWSLETTER- Aqui se inicia o código do newsletter */
+.newsletters-formulario {
+    display: flex;
+    margin: 10px auto;
+    padding: 0px 40px;
+    background-color: #526A52;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+}
+
+
+.div-newsletters-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+
+}
+
+.newsletters-formulario button {
+
+    height: 30%;
+    width: 20%;
+}
+
+.newsletters-formulario input {
+    margin: 0 auto;
+    height: 30%;
+    width: 36%;
+    padding: 15px;
+
+}
+
+.div-newsletters-input button {
+    margin: 0 auto;
+}
+
+.div-newsletters-title h3,
+.div-newsletters-title p {
+    text-align: left;
+    color: #ffffff;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+
+}
+
+.div-newsletters-title p {
+    font-size: 12px;
+}
+
+.div-newsletters-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height: auto;
+    font-size: 19px;
+}
+
+.decore-com-verde {
+    /* background-color: #526A52; */
+    height: auto;
+}
+
+.area-superior {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin: 10px auto;
+
+}
+
+.area-superior div img,
+.area-infeior div img {
+    width: 100%;
+}
+
+.area-infeior {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+
+
+.coluna-1,
+.coluna-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.coluna-2,
+.coluna-4,
+.coluna-6 {
+    display: inline;
+    height: 100%;
+}
+
+.coluna-5 {
+    display: flex;
+    flex-direction: initial;
+}
+
+
+textarea:focus,
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+
+/*Responsive mobile min:768*/
+
+@media screen and (max-width: 768px) {
+
+
+
+    .aprenda-mais-box-center {
+        margin: 0px;
+    }
+
+    .aprenda-mais {
+        background-image: url(/src/public/img/banner-area\cactus-768.jpg);
+    }
+
+    .aprenda-mais p {
+        width: 55%;
+        margin: 10px 0px 13px 50px;
+
+
+    }
+
+    .aprenda-mais a {
+        margin: 10px 0px 0px 382px;
+    }
+
+    .aprenda-mais h2 {
+        margin-left: 50px;
+    }
+
+    .type-cactus-icon {
+        width: 9vw;
+
+    }
+
+    .div-newsletters-title h3 {
+
+        font-size: 15px;
+    }
+
+    .div-newsletters-title p {
+        font-size: 14px;
+    }
+
+/*Responsive mobile min:425*/
+    @media screen and (max-width: 425px) {
+        header{
+            justify-content: center;
+        }
+         nav {
+            display: none;
+        }
+
+        .title-logo {
+            margin: 0;
+            align-items: center;
+        }
+        .txt-desconto {
+
+            font-size: 13px;
+            padding: 5px;
+        }
+
+        .contato-whatsap-logo {
+
+            right: 26px;
+            bottom: 20px;
+
+        }
+        .text {
+            top: 65px;
+
+        }
+        .txt-info-beneficios-loja {
+            display: none;
+            
+        }
+        .frete-gratis, .div-pague-seguro, .div-devolucoes {
+            flex-direction: column;
+        }
+        .titulo-beneficios-loj,.div-info-beneficios-loja  {
+            font-size: 9px;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .div-info-beneficios-loja  {
+            padding: 1px;
+
+        }
+
+        .img-frete-gratis, .img-pague-seguro, .img-devolucoes {
+            width: 30%;
+            margin: 5px;
+        }
+        .carrosel-produtos, .carrosel-produtos-dois {
+            margin-top: 15px;
+
+        }
+    }
+
+
+}
